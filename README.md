@@ -74,7 +74,7 @@ metrics.dynatrace.com/path: '/metrics'
 #### 2. Explore the prometheus metrics in Dynatrace
 In Dynatrace, Click on metrics and search for kube_event_unique_events
 Once we see the metric in dynatrace we can now use the metric explorer to build a graph.
-<p align="center"><img src="/image/dt_metric.PNG" width="60%" alt="dynatrace metrics" /></p>
+<p align="center"><img src="/image/dt_explore_data.png" width="60%" alt="dynatrace metrics" /></p>
 
 #### 3. Let's build Graph
 In Dynatrace, Click on the Explore Data on the left menu
