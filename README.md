@@ -135,12 +135,11 @@ cd ../sockshop
 kubectl create -f ./manifests/k8s-namespaces.yml
 
 kubectl -n sockshop-production create rolebinding default-view --clusterrole=view --serviceaccount=sockshop-production:default
-kubectl -n sockshop-dev create rolebinding default-view --clusterrole=view --serviceaccount=sockshop-dev:default
 
-kubectl apply -f ./manifests/backend-services/user-db/sockshop-dev/
+
 kubectl apply -f ./manifests/backend-services/user-db/sockshop-production/
 
-kubectl apply -f ./manifests/backend-services/shipping-rabbitmq/sockshop-dev/
+
 kubectl apply -f ./manifests/backend-services/shipping-rabbitmq/sockshop-production/
 
 kubectl apply -f ./manifests/backend-services/carts-db/
@@ -148,7 +147,6 @@ kubectl apply -f ./manifests/backend-services/catalogue-db/
 
 kubectl apply -f ./manifests/backend-services/orders-db/
 
-kubectl apply -f ./manifests/sockshop-app/sockshop-dev/
 kubectl apply -f ./manifests/sockshop-app/sockshop-production/
 ```
 To visualize the traces in Dynatrace, Click on the menu ( application & Microservices / Distributes traces)
